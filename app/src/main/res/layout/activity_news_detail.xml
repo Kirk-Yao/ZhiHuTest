@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/activity_news_detail_toolbar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
+                android:background="@drawable/back_white"
+                android:id="@+id/activity_news_detail_back"
+                 />
+
+            <ImageView
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
+                android:layout_marginLeft="110dp"
+                android:layout_toLeftOf="@+id/activity_news_detail_collect"
+                android:id="@+id/activity_news_detail_share"
+                android:background="@drawable/share_white"/>
+            <ImageView
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
+                android:layout_marginLeft="30dp"
+                android:layout_toLeftOf="@+id/activity_news_detail_comment_iv"
+                android:id="@+id/activity_news_detail_collect"
+                android:background="@drawable/collect_white"/>
+
+            <ImageView
+                android:layout_width="@dimen/toolbar_icon_size"
+                android:layout_height="@dimen/toolbar_icon_size"
+                android:id="@+id/activity_news_detail_comment_iv"
+                android:layout_marginLeft="30dp"
+                android:layout_toLeftOf="@+id/activity_news_detail_comment_tv"
+                android:background="@drawable/comment_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="222"
+                android:layout_toLeftOf="@+id/activity_news_detail_like_iv"
+                android:paddingLeft="10dp"
+                android:id="@+id/activity_news_detail_comment_tv"
+                android:textColor="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/like_white"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/activity_news_detail_like_tv"
+                android:id="@+id/activity_news_detail_like_iv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111"
+                android:layout_marginRight="@dimen/padding"
+                android:textColor="@android:color/white"
+                android:id="@+id/activity_news_detail_like_tv"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <!--<ImageView
+            android:layout_width="@dimen/toolbar_icon_size"
+            android:layout_height="@dimen/toolbar_icon_size"
+            android:background="@drawable/back_white"
+            android:id="@+id/activity_news_detail_back"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:layout_width="@dimen/toolbar_icon_size"
+            android:layout_height="@dimen/toolbar_icon_size"
+            android:layout_marginLeft="110dp"
+            android:id="@+id/activity_news_detail_share"
+            android:background="@drawable/share_white"/>
+        <ImageView
+            android:layout_width="@dimen/toolbar_icon_size"
+            android:layout_height="@dimen/toolbar_icon_size"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/activity_news_detail_collect"
+            android:background="@drawable/collect_white"/>
+
+        <ImageView
+            android:layout_width="@dimen/toolbar_icon_size"
+            android:layout_height="@dimen/toolbar_icon_size"
+            android:id="@+id/activity_news_detail_comment_iv"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/comment_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="222"
+            android:paddingLeft="10dp"
+            android:id="@+id/activity_news_detail_comment_tv"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/like_white"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/activity_news_detail_like_iv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:layout_marginRight="@dimen/padding"
+            android:textColor="@android:color/white"
+            android:id="@+id/activity_news_detail_like_tv"
+            android:layout_gravity="right"/>-->
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_activity_news_detail"/>
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_news_detail_webView"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

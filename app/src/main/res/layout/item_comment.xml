@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.k.zhihudaily.view.RoundImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/item_comment_head_iv"
+        android:background="@android:drawable/arrow_down_float"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_comment_name_tv"
+            android:text="测试"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:id="@+id/item_comment_like_tv"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/item_comment_like_iv"
+            android:layout_toLeftOf="@+id/item_comment_like_tv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试内容"
+            android:textColor="@android:color/black"
+            android:id="@+id/item_comment_content_tv"
+            android:layout_below="@+id/item_comment_name_tv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23121"
+            android:id="@+id/item_comment_date_tv"
+            android:layout_below="@+id/item_comment_content_tv"/>
+    </RelativeLayout>
+</LinearLayout>

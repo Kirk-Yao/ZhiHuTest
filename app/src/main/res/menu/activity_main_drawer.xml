@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_daily_psychology"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="日常心理学" />
+        <item
+            android:id="@+id/nav_user_rec"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="用户推荐日报" />
+        <item
+            android:id="@+id/nav_daily_movie"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="电影日报" />
+        <item
+            android:id="@+id/nav_no_boring"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="不许无聊" />
+        <item
+            android:id="@+id/nav_daily_design"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="设计日报" />
+        <item
+            android:id="@+id/nav_daily_big_company"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="大公司日报" />
+        <item
+            android:id="@+id/nav_daily_finance"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="财经日报" />
+        <item
+            android:id="@+id/nav_internet_safe"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="互联网安全" />
+        <item
+            android:id="@+id/nav_start_game"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="开始游戏" />
+        <item
+            android:id="@+id/nav_daily_music"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="音乐日报" />
+        <item
+            android:id="@+id/nav_daily_comic"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="动漫日报" />
+        <item
+            android:id="@+id/nav_daily_sport"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="体育日报" />
+    </group>
+
+</menu>

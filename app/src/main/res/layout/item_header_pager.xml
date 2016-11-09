@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pager_height">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pager_height"
+        android:scaleType="centerCrop"
+        android:id="@+id/item_pager_pic_iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/item_pager_title_tv"
+        android:text="2323"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/header_dot_ll"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dot"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dot"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dot"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dot"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/dot"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</RelativeLayout>
